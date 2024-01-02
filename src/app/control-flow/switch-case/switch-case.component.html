@@ -1,0 +1,42 @@
+
+<div class="switch-case-wrapper">
+
+  <h2> <code>"&#64;"switch</code> block - selection</h2>
+
+  
+  <div class="row">
+    <div class="col-md-4">
+      <select name="cars" id="cars" class="custom-select" (change)="getSelectedCar($event)">
+        <option value="default">Please select Car</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 result">
+      <h4>Selected Car is : 
+        @switch (selectedCar) {
+          @case ('volvo') {
+            <strong>Volvo</strong>
+          }
+          @case ('saab') {
+            <strong>Saab</strong>
+          }
+          @case ('mercedes') {
+            <strong>Mercedes</strong>
+          }
+          @case ('audi') {
+            <strong>Audi</strong>
+          }
+          @default {
+            --
+          }
+        }
+      </h4>
+    </div>
+  </div>
+</div>
