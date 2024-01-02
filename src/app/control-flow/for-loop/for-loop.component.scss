@@ -1,0 +1,19 @@
+.for-loop-wrapper{
+  .row{
+
+    input[type=search]{
+      margin-bottom:  1rem;
+    }
+
+    .user-list{
+      .card{
+        .card-body{
+          display: grid;
+          grid-template-columns: 2rem 1fr;
+          padding: 0.5rem;
+        } 
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

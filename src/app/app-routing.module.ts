@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'switch-case',
     loadComponent: () => import('./control-flow/switch-case/switch-case.component').then(u => u.SwitchCaseComponent)
+  },
+  {
+    path: 'for',
+    loadComponent: () => import('./control-flow/for-loop/for-loop.component').then(u => u.ForLoopComponent)
   }
 ];
 
