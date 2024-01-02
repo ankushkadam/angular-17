@@ -1,0 +1,17 @@
+
+.if-else-wrapper{
+  .btn{
+    margin: 1rem 0;
+  }
+
+  p{
+    .active{
+      color: green;
+    }
+
+    .in-active{
+      color: red;
+    }
+  }
+  
+}

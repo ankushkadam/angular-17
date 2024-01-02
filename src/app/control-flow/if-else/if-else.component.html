@@ -1,0 +1,13 @@
+<div class="if-else-wrapper">
+  @if(isServerActivated){
+    <button class="btn btn-sm btn-danger" (click)="activateAndInactivateServer()">In-Activate Server</button>
+  } @else {
+    <button class="btn btn-sm btn-success" (click)="activateAndInactivateServer()"> Activate Server </button>
+  }
+  
+  @if(isServerActivated){
+    <p>Server is <strong class="active">Activated</strong></p>
+  } @else {
+    <p>Server is <strong class="in-active"> In-activated</strong> </p>
+  }
+</div>
