@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'signal',
     loadComponent: () => import('./signal/signal-wrapper/signal-wrapper.component').then(u => u.SignalWrapperComponent)
+  },
+  {
+    path: 'defer',
+    loadComponent: () => import('./defer/parent/parent.component').then(u => u.ParentComponent)
   }
 ];
 
