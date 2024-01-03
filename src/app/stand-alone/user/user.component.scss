@@ -1,13 +1,15 @@
-h2{
-  margin: 2rem 0;
-}
-
-.card{
-  max-width: 40rem;
-
-  .card-header{
-    text-transform: uppercase;
-    font-weight: 500;
-    
+.user-wrapper{
+  h2{
+    margin: 1rem 0;
+  }
+  
+  .card{
+    max-width: 40rem;
+  
+    .card-header{
+      text-transform: uppercase;
+      font-weight: 500;
+      
+    }
   }
 }

@@ -1,4 +1,31 @@
 .app-wrapper{
-  width: 80%;
-  margin: auto;
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  column-gap: 1rem;
+  height: 100vh;
+  .navigation{
+    padding-top: 2rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 4px #edecec;
+
+    display: flex;
+    flex-direction: column;
+
+    .nav{
+      .nav-item{
+        width: 100%;
+
+        .active{
+          background: blue;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .content{
+    padding: 1rem;
+  }
 }

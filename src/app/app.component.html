@@ -1,3 +1,15 @@
 <div class="app-wrapper">
-  <router-outlet></router-outlet>
+  <div class="navigation">
+    <ul class="nav">
+      <li class="nav-item"> <a class="nav-link" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="/">Stand Alone Comp</a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLinkActive="active" routerLink="/if-else">If-Else Control Flow</a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLinkActive="active" routerLink="/switch-case">Switch Control Flow</a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLinkActive="active" routerLink="/for">For Control Flow</a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLinkActive="active" routerLink="/signal">Signal</a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLinkActive="active" routerLink="/defer">Defer</a> </li>
+    </ul>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
 </div>
