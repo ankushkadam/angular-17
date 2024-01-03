@@ -1,0 +1,13 @@
+<div class="update-effect-wrapper">
+  <!-- update-block start here -->
+  <div class="update-block" *ngIf="type === 'update'">
+    <div> <button class="btn btn-sm btn-light" (click)="decreaseQuantity()" type="button"> - Decrement </button> </div>
+    <div>{{quantity()}}</div>
+    <div> <button type="button" (click)="increaseQuantity()" class="btn btn-sm btn-light"> + Increment </button> </div>
+  </div>
+  <!-- update-block end here -->
+
+  <!-- effect block start here -->
+  <div class="effect-block"></div>
+  <!-- effect block end here -->
+</div>

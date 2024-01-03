@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'for',
     loadComponent: () => import('./control-flow/for-loop/for-loop.component').then(u => u.ForLoopComponent)
+  },
+  {
+    path: 'signal',
+    loadComponent: () => import('./signal/signal-wrapper/signal-wrapper.component').then(u => u.SignalWrapperComponent)
   }
 ];
 

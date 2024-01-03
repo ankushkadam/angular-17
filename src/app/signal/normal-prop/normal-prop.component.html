@@ -1,0 +1,36 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Full Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        {{firstName}}
+      </td>
+      <td>
+        {{lastName}}
+      </td>
+      <td>
+        {{fullName}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="input-group">
+          <input type="text" class="form-control" [value]="firstName" placeholder="Change First Name" #fName />
+          <button class="btn btn-sm btn-primary" type="button" (click)="changeFirstName(fName.value)">Change First Name</button>
+        </div>
+      </td>
+      <td>
+        <div class="input-group">
+          <input type="text" class="form-control" [value]="lastName" placeholder="Change Last Name" #lName />
+          <button class="btn btn-sm btn-primary" type="button" (click)="changeLastName(lName.value)">Change Last Name</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
