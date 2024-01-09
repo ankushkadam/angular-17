@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'defer',
     loadComponent: () => import('./defer/parent/parent.component').then(u => u.ParentComponent)
+  },
+  {
+    path: 'two-way-binding',
+    loadComponent: () => import('./two-way-binding/parent/parent.component').then(u => u.ParentComponent)
   }
 ];
 
